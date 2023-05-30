@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Futbol 90</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav id="nav-bar">
+        <ul>
+          <li>Futbol 90</li>
+
+          <li id="navbar-right">
+            <select name="league-select" id="leagueSelect">
+              <option value="2">UEFA CHAMPIONS LEAGUE</option>
+              <option value="78">BUNDESLIGA</option>
+              <option value="39">ENGLISH PREMIER LEAGUE</option>
+              <option value="140">LA LIGA</option>
+              <option value="135">SERIE A</option>
+              <option value="866">MLS</option>
+              <option value="262">LIGA MX</option>
+              <option value="61">LIGUE 1</option>
+            </select>
+            <button id="srcBtn">Search...</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero-container">
+      <section class="container matches-container">
+        <h1>MATCHES</h1>
+        <div id="match-row">
+          <div id="row">
+            <img src="" />
+            <p class="score">3-1</p>
+            <img src="" />
+          </div>
+        </div>
+      </section>
+      <section class="container standings-container">
+        <h1>STANDINGS</h1>
+        <div class="standings-row">
+          <div class="table-container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Team</th>
+                  <th>Losses</th>
+                  <th>Draws</th>
+                  <th>Wins</th>
+                  <th>PTS</th>
+                </tr>
+              </thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

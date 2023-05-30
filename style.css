@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: "Wix Madefor Text", sans-serif;
+}
+.nav-container {
+  margin-top: 50px;
+
+  display: flex;
+
+  height: 50px;
+  align-items: center;
+  padding: auto;
+}
+nav {
+  width: 100%;
+  padding: 0px 40px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul li {
+  font-size: 15px;
+  list-style: none;
+  height: 30px;
+  color: rgb(76, 76, 78);
+}
+a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+h1 {
+  color: rgb(176, 118, 205);
+}
+#active {
+  border-bottom: 2px solid rgb(169, 44, 44);
+}
+.search {
+  width: 200px;
+  height: 24px;
+  border: none;
+  background-color: rgba(248, 218, 218, 0.12);
+  padding: 0px 10px;
+  color: rgb(206, 178, 209);
+  outline: none;
+  font-size: 15px;
+}
+.hero-container {
+  display: flex;
+  width: 75%;
+  height: 600px;
+  margin-left: 140px;
+  justify-content: space-between;
+  padding: 0px 50px;
+  border-radius: 10px;
+  background: rgb(49, 48, 48);
+  opacity: 0.75;
+  margin-top: 110px;
+}
+.container {
+  padding: 30px 50px;
+  border-radius: 10px;
+  margin: 30px;
+  width: 100%;
+}
+#match-row {
+  margin-top: 20px;
+  height: 400px;
+
+  position: relative;
+  overflow: scroll;
+}
+.standings-row {
+  background-color: transparent;
+  margin-top: 50px;
+  height: 400px;
+  width: 400px;
+  overflow: scroll;
+}
+.row {
+  margin: 10px 40px;
+  background-color: rgb(33, 33, 38);
+  height: 60px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+.row:hover {
+  background-color: rgb(32, 86, 144);
+  cursor: pointer;
+}
+.row p {
+  background-color: transparent;
+}
+.row img {
+  height: 45px;
+  background-color: transparent;
+}
+.table-container {
+}
+table {
+  width: 30%;
+  border-collapse: collapse;
+  background-color: transparent;
+  align-items: center;
+}
+
+th,
+td {
+  height: 60px;
+  justify-content: space-between;
+  padding: 0px 20px;
+  width: 10px;
+  background-color: white;
+  color: rgb(40, 40, 40);
+}
+td img {
+  height: 40px;
+  background-color: transparent;
+}
+img {
+}
+th {
+  height: 40px;
+  background-color: #b4b2b2;
+}
+tr:hover {
+  background-color: rgb(57, 88, 226);
+  cursor: pointer;
+}
+td:first-child {
+  font-weight: bold;
+}
+.standings-container {
+  background-color: white;
+}
+.standings-container h1 {
+  background: white;
+}
+#leagueSelect {
+  background-color: rgb(208, 208, 208);
+  border: none;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 3px 10px;
+  outline: none;
+  color: black;
+}
+#srcBtn {
+  border: none;
+  background-color: rgb(42, 43, 41);
+  padding: 3px 7px;
+  border-radius: 20px;
+  color: rgb(158, 154, 154);
+}
+#srcBtn:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+  nav li {
+    margin: 0px 5px;
+  }
+
+  .nav-container {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+  }
+  .hero-container {
+    display: inline-block;
+    width: 95%;
+    height: 600px;
+    margin-left: 15px;
+    justify-content: space-between;
+    padding: 0px 0px;
+    border-radius: 10px;
+    background: rgb(49, 48, 48);
+    background-color: black;
+    opacity: 0.75;
+    margin-top: 30px;
+  }
+  .container {
+    padding: 0px 0px;
+    border-radius: 0px;
+    margin: 40px 0px;
+    width: 96%;
+  }
+  #match-row {
+    margin-top: 20px;
+    height: 350px;
+
+    position: relative;
+    overflow: scroll;
+  }
+  h1 {
+    margin-left: 10px;
+    padding-top: 20px;
+    font-size: 18px;
+  }
+  .row {
+    margin: 0px 14px;
+    background-color: rgb(33, 33, 38);
+    height: 48px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px;
+  }
+  .row img {
+    height: 35px;
+    background-color: transparent;
+  }
+  .standings-row {
+    background-color: transparent;
+    margin-top: 30px;
+    height: 200px;
+    width: 100%;
+    overflow: scroll;
+  }
+  table {
+    width: 50px;
+    border-collapse: collapse;
+    background-color: transparent;
+    align-items: center;
+  }
+  th,
+  td {
+    height: 10px;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 10px;
+    background-color: white;
+    color: rgb(88, 24, 24);
+  }
+  td img {
+    height: 33px;
+    background-color: transparent;
+  }
+  .nav-container {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+  .standings-container {
+    margin-top: 20px;
+  }
+  #leagueSelect {
+    width: 130px;
+
+    background-color: rgb(208, 208, 208);
+    border: none;
+
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 3px 3px;
+    outline: none;
+    color: black;
+  }
+  #srcBtn {
+    border: none;
+    background-color: rgb(42, 43, 41);
+    padding: 3px 7px;
+    border-radius: 20px;
+    color: rgb(158, 154, 154);
+  }
+}
